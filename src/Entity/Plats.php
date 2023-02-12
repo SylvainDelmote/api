@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\PlatsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use phpDocumentor\Reflection\PseudoTypes\False_;
 
@@ -27,6 +29,8 @@ class Plats
 
     #[ORM\Column]
     private ?bool $healthy = False;
+
+
 
     public function getId(): ?int
     {
